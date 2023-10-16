@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;500;600;800;900&display=swap" rel="stylesheet">
+    
+    <title>Bar Bestard</title>
+    <div class="cesta2"></div>
+
+    
+
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .encabezado_menu {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+        color: #ff6600;
+    }
+    
+    .imatge_tomeu {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    </style>
+<header class="encabezado_menu">
+    <nav>
+        <ul>
+            <li><a href="/index.html">Inici</a></li>
+            <li><a href="/form.html">Formulari</a></li>
+            <li><a href="/canet.html">Canet</a></li>
+            <li><a href="/horari.html">Horari</a></li>
+            <li><a href="/web_any_passat/index.html">Responsive 1 (Web feta l'any passat)</a></li>
+            <li><a href="/horari_responsive.html">Responsive 2 (Horari Responsive)</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+
+
+
+
+
+
+
+
+    <div class="wrap">
+        <header class="logoititol">
+            <div class="logo">
+                <img src="assets/LOGOBARBESTARD.png" alt="logo_bar_bestard" width="350px">
+            </div>
+            <div class="carta">
+                <h1>Carta</h1>
+            </div>
+        </header>
+
+        <div class="store-wrapper">
+            <div class="category_list">
+                <button class="selecciocategoria active" data-category="move-all">Tot</button>
+                <button class="selecciocategoria" data-category="move-pizzes">Pizzes</button>
+                <button class="selecciocategoria" data-category="move-hamburgueses">Hamburgueses</button>
+                <button class="selecciocategoria" data-category="move-begudes">Begudes</button>
+                <button class="selecciocategoria" data-category="move-postres">Postres</button>
+                <button class="selecciocategoria" data-category="move-amanides">Amanides</button>
+                <div class="category_indicator"></div>
+            </div>
+
+              
+              
+            <div class="category_dropdown">
+                <select name="category">
+                  <option value="all">Tota la carta</option>
+                  <option value="books">Pizzes</option>
+                  <option value="electronics">Hamburgueses</option>
+                  <option value="electronics">Amanides</option>
+                  <option value="electronics">Postres</option>
+                  <option value="clothing">Begudes</option>
+                </select>
+              </div>
+              
+            <section class="products-list">
+                <div class="product-item active" category="move-pizzes">
+                    <img src="assets/1.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Margalida</span>
+                    <span class="preu_productes">10€</span>
+                    <button id="afegir-compra-item1">Afegir a la cistella</button>
+                </div>
+                
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/2.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Montse</span>
+                    <span class="preu_productes">12€</span>
+                    <button id="afegir-compra-item2">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/3.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Felip</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item3">Afegir a la cistella</button>
+                </div>
+
+                
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/5.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Aina</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item5">Afegir a la cistella</button>
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/6.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Xisca</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item6">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/7.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Pep</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item7">Afegir a la cistella</button>
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Ramón</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Natxo</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Diego</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Miquel</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Maria</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Maria Antònia</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Bar Bestard</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Tere</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Joan</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Paco</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-pizzes">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Esther</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+
+                <div class="product-item" category="move-hamburgueses">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">De Bou</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-hamburgueses">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">2</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-hamburgueses">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">1</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-hamburgueses">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">hamgurgueses</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+
+                <div class="product-item" category="move-postres">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Postre</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-amanides">
+                    <img src="assets/8.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Amanida</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item8">Afegir a la cistella</button>
+                
+                </div>
+                <div class="product-item" category="move-begudes">
+                    <img src="assets/4.png" alt="foto_pizza_1" height="130" class="imagenproducto">
+                    <span class="nomproducte1" href="#">Aigua</span>
+                    <span class="preu_productes">9.99€</span>
+                    <button id="afegir-compra-item4">Afegir a la cistella</button>
+                </div>
+            </section>
+
+
+        </div>
+
+
+
+
+    </div>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

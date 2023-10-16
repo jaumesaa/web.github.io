@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(32, 196, 196);
+}
+
+.horario {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#dia-titulo {
+    text-align: center;
+    background-color: blue;
+}
+
+.asignatura {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.asignatura .nombre {
+    font-weight: bold;
+}
+
+.navegacion {
+    text-align: center;
+}
+
+#anterior, #siguiente {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: aquamarine;
+}
+
+#anterior {
+    margin-right: 10px;
+    background-color: brown;
+    border: 5px solid #000;
+}
+.hora{
+    background-color: blueviolet;
+}
+
+.horario_pc {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+@media (max-width: 670px) {
+    .horario_pc {
+        display: none;
+    }
+}
+.horario_movil {
+    display: none;
+}
+
+
+@media (max-width: 670px) {
+    .horario_movil {
+        display: block;
+    }
+}
