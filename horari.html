@@ -4,27 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horari</title>
+    <link rel="stylesheet" href="horari_css.css">
 </head>
 <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="form.html">Formulari</a></li>
+                    <li><a href="canet.html">Canet</a></li>
+                    <li><a href="horari.html">Horari</a></li>
+                </ul>
+            </nav>
+        </header>
     <table border="1">
         <tr>
-            <th rowspan="2" style="font-size: 36px; min-width: 150px; height: 70px;">Horari</th>
-            <th colspan="6">Horari SMX GRUP B</th>
+            <th class="Horari" rowspan="2" style="font-size: 36px; min-width: 150px; height: 70px;">Horari</th>
+            <th class="Titol" colspan="6">Horari SMX GRUP B</th>
         </tr>
         <tr>
-            <td>Dilluns</td>
-            <td>Dimarts</td>
-            <td>Dimecres</td>
-            <td>Dijous</td>
-            <td>Divendres</td>
+            <td class="dies_setmana">Dilluns</td>
+            <td class="dies_setmana">Dimarts</td>
+            <td class="dies_setmana">Dimecres</td>
+            <td class="dies_setmana">Dijous</td>
+            <td class="dies_setmana">Divendres</td>
         </tr>
         <tr>
             <td>8:00-8:50</td>
-            <td rowspan="2">Serveis</td>
-            <td rowspan="2">Seguretat</td>
-            <td rowspan="2">Serveis</td>
-            <td rowspan="2">Sistemes</td>
-            <td rowspan="2">Serveis</td>
+            <td class="Serveis" rowspan="2">Serveis</td>
+            <td class="Seguretat" rowspan="2">Seguretat</td>
+            <td  class="Serveis" rowspan="2">Serveis</td>
+            <td class="Sistemes" rowspan="2">Sistemes</td>
+            <td class="Serveis"  rowspan="2">Serveis</td>
         </tr>
         <tr>
             <td>8:50-9:40</td>
@@ -35,16 +46,16 @@
         </tr>
         <tr>
             <td>10:00-10:55</td>
-            <td rowspan="2">Seguretat</td>
-            <td rowspan="2">Aplicacions</td>
-            <td rowspan="2">Aplicacions</td>
-            <td>Sistemes</td>
-            <td>Serveis</td>
+            <td class="Seguretat" rowspan="2">Seguretat</td>
+            <td class="Aplicacions" rowspan="2">Aplicacions</td>
+            <td class="Aplicacions" rowspan="2">Aplicacions</td>
+            <td class="Sistemes">Sistemes</td>
+            <td class="Serveis" >Serveis</td>
         </tr>
         <tr>
             <td>10:55-11:50</td>
-            <td>Serveis</td>
-            <td>Sistemes</td>
+            <td class="Serveis" >Serveis</td>
+            <td class="Sistemes">Sistemes</td>
         </tr>
         <tr>
             <td>11:50-12:10</td>
@@ -52,15 +63,15 @@
         </tr>
         <tr>
             <td>12:10-13:05</td>
-            <td>EIE</td>
-            <td rowspan="2">EIE</td>
-            <td rowspan="2">Sistemes</td>
-            <td rowspan="2">Seguretat</td>
-            <td rowspan="2">Sistemes</td>
+            <td class="EIE">EIE</td>
+            <td class="EIE" rowspan="2">EIE</td>
+            <td class="Sistemes" rowspan="2">Sistemes</td>
+            <td class="Seguretat" rowspan="2">Seguretat</td>
+            <td class="Sistemes" rowspan="2">Sistemes</td>
         </tr>
         <tr>
             <td>13:05-14:00</td>
-            <td>Web</td>
+            <td class="Web">Web</td>
         </tr>
     </table>
 </body>
